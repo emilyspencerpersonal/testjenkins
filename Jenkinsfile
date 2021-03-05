@@ -15,4 +15,11 @@ pipeline {
             '''
         }
     }
+    stage("Test") {
+        steps {
+            sh '''echo "third step"
+            ls -al
+            '''
+        }
+    }
 }
